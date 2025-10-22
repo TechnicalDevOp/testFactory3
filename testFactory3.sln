@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpTestFactory", "PumpTestFactory.csproj", "{EFC455A6-5934-340A-9C17-F5D42CBE4C21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFC455A6-5934-340A-9C17-F5D42CBE4C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC455A6-5934-340A-9C17-F5D42CBE4C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC455A6-5934-340A-9C17-F5D42CBE4C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC455A6-5934-340A-9C17-F5D42CBE4C21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B25EEF4F-57E8-40C6-B4E7-ADA985986E11}
+	EndGlobalSection
+EndGlobal

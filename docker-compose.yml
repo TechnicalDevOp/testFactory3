@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  pump-test-factory:
+    build: .
+    image: pump-test-factory:latest
+    container_name: pump-test-factory
+    # Default command - can be overridden
+    command: ["pump", "open"]
+    # Remove container after execution
+    restart: "no"
+    # Optional: Mount logs directory if you want to persist logs
+    # volumes:
+    #   - ./logs:/app/logs
+
+# Example usage:
+# docker-compose run pump-test-factory pump open
+# docker-compose run pump-test-factory compressor start  
+# docker-compose run pump-test-factory valve test

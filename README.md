@@ -21,7 +21,7 @@ dotnet run <pump_type> <operation>
 
 ```bash
 # Test opening a pump
-dotnet run pump open
+dotnet run pump opened
 
 # Test starting a compressor
 dotnet run compressor start
@@ -41,7 +41,7 @@ dotnet run pump close
 - `valve` - Ball Valve
 
 **Operations:**
-- `open` - Test opening operation
+- `opened` - Test opening operation
 - `close` - Test closing operation
 - `start` - Test startup operation
 - `stop` - Test shutdown operation
@@ -60,7 +60,7 @@ The application runs various tests depending on the pump type and operation:
 
 ### Operation-Specific Tests
 
-**Open Operation:**
+**Opened Operation:**
 - Opening Time Test
 - Full Open Position Test
 
@@ -142,14 +142,14 @@ Initializing pump for operation: open
    docker build -t pump-test-factory .
    
    # Run examples
-   docker run --rm pump-test-factory pump open
+   docker run --rm pump-test-factory pump opened
    docker run --rm pump-test-factory compressor start
    docker run --rm pump-test-factory valve test
    ```
 
 ### Docker Compose
 ```bash
-# Build and run with default command (pump open)
+# Build and run with default command (pump opened)
 docker-compose up
 
 # Run with custom parameters

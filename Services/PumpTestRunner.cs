@@ -54,19 +54,19 @@ public class PumpTestRunner
     {
         return new Dictionary<string, PumpConfiguration>
         {
-            ["pump_open"] = new() { Type = "Centrifugal Pump", Operation = "Open", MaxPressure = 150, MaxFlow = 500, MaxTemperature = 180, TestDurationSeconds = 30 },
+            ["pump_opened"] = new() { Type = "Centrifugal Pump", Operation = "Opened", MaxPressure = 150, MaxFlow = 500, MaxTemperature = 180, TestDurationSeconds = 30 },
             ["pump_close"] = new() { Type = "Centrifugal Pump", Operation = "Close", MaxPressure = 150, MaxFlow = 500, MaxTemperature = 180, TestDurationSeconds = 15 },
             ["pump_start"] = new() { Type = "Centrifugal Pump", Operation = "Start", MaxPressure = 150, MaxFlow = 500, MaxTemperature = 180, TestDurationSeconds = 45 },
             ["pump_stop"] = new() { Type = "Centrifugal Pump", Operation = "Stop", MaxPressure = 150, MaxFlow = 500, MaxTemperature = 180, TestDurationSeconds = 20 },
             ["pump_test"] = new() { Type = "Centrifugal Pump", Operation = "Test", MaxPressure = 150, MaxFlow = 500, MaxTemperature = 180, TestDurationSeconds = 60 },
             
-            ["compressor_open"] = new() { Type = "Rotary Compressor", Operation = "Open", MaxPressure = 300, MaxFlow = 200, MaxTemperature = 220, TestDurationSeconds = 25 },
+            ["compressor_opened"] = new() { Type = "Rotary Compressor", Operation = "Opened", MaxPressure = 300, MaxFlow = 200, MaxTemperature = 220, TestDurationSeconds = 25 },
             ["compressor_close"] = new() { Type = "Rotary Compressor", Operation = "Close", MaxPressure = 300, MaxFlow = 200, MaxTemperature = 220, TestDurationSeconds = 20 },
             ["compressor_start"] = new() { Type = "Rotary Compressor", Operation = "Start", MaxPressure = 300, MaxFlow = 200, MaxTemperature = 220, TestDurationSeconds = 50 },
             ["compressor_stop"] = new() { Type = "Rotary Compressor", Operation = "Stop", MaxPressure = 300, MaxFlow = 200, MaxTemperature = 220, TestDurationSeconds = 25 },
             ["compressor_test"] = new() { Type = "Rotary Compressor", Operation = "Test", MaxPressure = 300, MaxFlow = 200, MaxTemperature = 220, TestDurationSeconds = 90 },
             
-            ["valve_open"] = new() { Type = "Ball Valve", Operation = "Open", MaxPressure = 600, MaxFlow = 1000, MaxTemperature = 400, TestDurationSeconds = 10 },
+            ["valve_opened"] = new() { Type = "Ball Valve", Operation = "Opened", MaxPressure = 600, MaxFlow = 1000, MaxTemperature = 400, TestDurationSeconds = 10 },
             ["valve_close"] = new() { Type = "Ball Valve", Operation = "Close", MaxPressure = 600, MaxFlow = 1000, MaxTemperature = 400, TestDurationSeconds = 10 },
             ["valve_start"] = new() { Type = "Ball Valve", Operation = "Start", MaxPressure = 600, MaxFlow = 1000, MaxTemperature = 400, TestDurationSeconds = 15 },
             ["valve_stop"] = new() { Type = "Ball Valve", Operation = "Stop", MaxPressure = 600, MaxFlow = 1000, MaxTemperature = 400, TestDurationSeconds = 15 },
@@ -94,7 +94,7 @@ public class PumpTestRunner
         // Add operation-specific tests
         switch (config.Operation.ToLower())
         {
-            case "open":
+            case "opened":
                 baseTests.Add(new PumpTestResult { TestName = "Opening Time Test", Unit = "seconds" });
                 baseTests.Add(new PumpTestResult { TestName = "Full Open Position Test", Unit = "%" });
                 break;
